@@ -1,0 +1,32 @@
+{
+  "name": "somexa2026-consulta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portal de consulta individual de asistencias y participaciones SOMEXA 2026",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "validar": "node scripts/importar.mjs --solo-validar",
+    "importar": "node scripts/importar.mjs",
+    "test": "node --test \"tests/unit/*.test.mjs\"",
+    "test:integracion": "node --test --test-concurrency=1 \"tests/integracion/*.test.mjs\"",
+    "test:e2e": "node tests/e2e/flujo.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "next": "^16.4.6",
+    "postgres": "^4.1.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.9.3"
+  }
+}

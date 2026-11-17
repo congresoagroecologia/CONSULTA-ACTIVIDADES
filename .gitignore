@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env
+.env.*
+!.env.example
+datos/*
+!datos/LEEME.md
+*.log
+next-env.d.ts
+.vercel
+tests/e2e/capturas/
+tsconfig.tsbuildinfo
